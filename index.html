@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ---->Consultar CEP</title>
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+     <!-- JS (bom dia, boa tarde e boa noite) -->
+    <SCRIPT LANGUAGE="JavaScript">
+        d = new Date();
+        hour = d.getHours();
+        if(hour < 5)
+        {
+           document.write("Boa Noite");
+        }
+        else
+        if(hour < 8)
+        {
+           document.write("Bom Dia!");
+        }
+        else
+        if(hour < 12)
+        {
+           document.write("Bom Dia!");
+        }
+        else
+        if(hour < 18)
+        {
+           document.write("Boa tarde!");
+        }
+        else
+        {
+           document.write("Boa noite!");
+        }
+        </SCRIPT>
+    
+<div class="p-3 mb-2 bg-dark text-white">
+<div class="loader"></div>
+    <form  method="post">
+        <h1> Olá, deseja consultar um CEP? </h1>
+
+        <a href="buscar.php">
+         <button type="button" class="btn btn-primary">Sim!</button>
+    </a>
+
+    <a href="https://www.google.com/">
+    <button type="button" class="btn btn-danger">Não!</button>
+ </a>
+        
+    </form>
+
+    </div>
+    </form>
+</body>
+</html>
